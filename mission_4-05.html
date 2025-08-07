@@ -1,0 +1,21 @@
+<!DOCTYPE html> 
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>mission_4-05</title>
+  </head>
+  <body>
+    <div>
+      <button onclick="omikujishow()">おみくじを引く</button>
+      <p id="resultText" style="font-size: 24px; font-weight: bold; color: darkred;"></p>
+    </div>
+    <div id="omikuji">
+      <img id="omikujiImage" src="" alt="おみくじ結果" style="width: 200px; display: none;"> <!-- src="" という空の指定は初期状態で 画像を表示しないための placeholder（ダミー） -->
+      <!--  width: 200px; 画像の幅を200ピクセルに指定している。縦幅（height）を指定していないので、画像は元のアスペクト比（縦横比）を保ったまま自動調整される。
+        　　display: none;　この画像は最初は非表示にしておくという指定。ページを読み込んだ時点では、何も表示されない。
+        -->
+    </div>
+    
+    <script src="mission_4-05.js"></script>
+  </body>
+</html>
